@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID_0": 62,
+        "ISO": "EGY",
+        "NAME_0": "Egypt",
+        "ID_1": 1,
+        "NAME_1": "Cairo",
+        "NL_NAME_1": "",
+        "VARNAME_1": "Al Qahirah",
+        "TYPE_1": "Governorate",
+        "ENGTYPE_1": "Governorate",
+        "filename": "",
+        "filename_1": "",
+        "filename_2": "",
+        "filename_3": "",
+        "filename_4": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [31.2357, 30.0444],
+            [31.2357, 30.0444],
+            [31.2357, 30.0444],
+            [31.2357, 30.0444]
+          ]
+        ]
+      }
+    }
+  ]
+}

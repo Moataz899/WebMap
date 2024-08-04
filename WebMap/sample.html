@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_761eaa52465d849b4cb58682607fe146 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_761eaa52465d849b4cb58682607fe146" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_761eaa52465d849b4cb58682607fe146 = L.map(
+                "map_761eaa52465d849b4cb58682607fe146",
+                {
+                    center: [26.8206, 30.8025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6dadb99bdead9455521fa41afdeae754 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6dadb99bdead9455521fa41afdeae754.addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var feature_group_0001a68b672fd3208333e1418c725b64 = L.featureGroup(
+                {}
+            );
+        
+    
+
+        function geo_json_c3e7fb6652ca262c3a56310f9269606b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c3e7fb6652ca262c3a56310f9269606b = L.geoJson(null, {
+                onEachFeature: geo_json_c3e7fb6652ca262c3a56310f9269606b_onEachFeature,
+            
+        });
+
+        function geo_json_c3e7fb6652ca262c3a56310f9269606b_add (data) {
+            geo_json_c3e7fb6652ca262c3a56310f9269606b
+                .addData(data);
+        }
+            geo_json_c3e7fb6652ca262c3a56310f9269606b_add({"features": [{"geometry": {"coordinates": [[[31.2357, 30.0444], [31.2357, 30.0444], [31.2357, 30.0444], [31.2357, 30.0444]]], "type": "Polygon"}, "properties": {"ENGTYPE_1": "Governorate", "ID_0": 62, "ID_1": 1, "ISO": "EGY", "NAME_0": "Egypt", "NAME_1": "Cairo", "NL_NAME_1": "", "TYPE_1": "Governorate", "VARNAME_1": "Al Qahirah", "filename": "", "filename_1": "", "filename_2": "", "filename_3": "", "filename_4": ""}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_c3e7fb6652ca262c3a56310f9269606b.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_c3e7fb6652ca262c3a56310f9269606b.addTo(feature_group_0001a68b672fd3208333e1418c725b64);
+        
+    
+            feature_group_0001a68b672fd3208333e1418c725b64.addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var marker_6a27c9e3c1645aeac51227edae1b872e = L.marker(
+                [30.0277, 31.2336],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_1bbdc992b52c77c823c4aa17349d70d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a27c9e3c1645aeac51227edae1b872e.setIcon(icon_1bbdc992b52c77c823c4aa17349d70d6);
+        
+    
+        var popup_46b031583816ce7e9960c9dca39db11b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a000ee511198f3b0fc9e73393e56a1f6 = $(`<div id="html_a000ee511198f3b0fc9e73393e56a1f6" style="width: 100.0%; height: 100.0%;"><strong>Cairo University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_46b031583816ce7e9960c9dca39db11b.setContent(html_a000ee511198f3b0fc9e73393e56a1f6);
+            
+        
+
+        marker_6a27c9e3c1645aeac51227edae1b872e.bindPopup(popup_46b031583816ce7e9960c9dca39db11b)
+        ;
+
+        
+    
+    
+            var marker_3a35463913476723e59042fb5d587971 = L.marker(
+                [30.0185, 31.4994],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_e37444002ec8fb2735dda7c84a0aaf8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a35463913476723e59042fb5d587971.setIcon(icon_e37444002ec8fb2735dda7c84a0aaf8a);
+        
+    
+        var popup_1345d4719cbc59773e3763fb667fb43e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_114b94f9b702337dfc527ba374c8b61d = $(`<div id="html_114b94f9b702337dfc527ba374c8b61d" style="width: 100.0%; height: 100.0%;"><strong>The American University in Cairo</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_1345d4719cbc59773e3763fb667fb43e.setContent(html_114b94f9b702337dfc527ba374c8b61d);
+            
+        
+
+        marker_3a35463913476723e59042fb5d587971.bindPopup(popup_1345d4719cbc59773e3763fb667fb43e)
+        ;
+
+        
+    
+    
+            var marker_09081dcf5ae7dff47f927815375fb864 = L.marker(
+                [31.2001, 29.9187],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_47cbfd115cf13827243fe5981d1f9a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09081dcf5ae7dff47f927815375fb864.setIcon(icon_47cbfd115cf13827243fe5981d1f9a9c);
+        
+    
+        var popup_0c1f734b2781dc7d5cdc5cf0773c92c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b44c6a2422372ed7b50aab7d3989428 = $(`<div id="html_5b44c6a2422372ed7b50aab7d3989428" style="width: 100.0%; height: 100.0%;"><strong>Alexandria University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_0c1f734b2781dc7d5cdc5cf0773c92c5.setContent(html_5b44c6a2422372ed7b50aab7d3989428);
+            
+        
+
+        marker_09081dcf5ae7dff47f927815375fb864.bindPopup(popup_0c1f734b2781dc7d5cdc5cf0773c92c5)
+        ;
+
+        
+    
+    
+            var marker_3f2c9f928fb5fdb4363996e8c3d55674 = L.marker(
+                [30.0771, 31.2859],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_a7ebaea864eda48705fb83e58d148113 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f2c9f928fb5fdb4363996e8c3d55674.setIcon(icon_a7ebaea864eda48705fb83e58d148113);
+        
+    
+        var popup_48196786cb2b5c8ddf631be3d4acc198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7347fc0173919e3680a45776afbc4c06 = $(`<div id="html_7347fc0173919e3680a45776afbc4c06" style="width: 100.0%; height: 100.0%;"><strong>Ain Shams University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_48196786cb2b5c8ddf631be3d4acc198.setContent(html_7347fc0173919e3680a45776afbc4c06);
+            
+        
+
+        marker_3f2c9f928fb5fdb4363996e8c3d55674.bindPopup(popup_48196786cb2b5c8ddf631be3d4acc198)
+        ;
+
+        
+    
+    
+            var marker_4e0412d947280d246343152a8cb242fc = L.marker(
+                [31.0409, 31.3785],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_5715ece2cec5e88755a979584443c396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e0412d947280d246343152a8cb242fc.setIcon(icon_5715ece2cec5e88755a979584443c396);
+        
+    
+        var popup_f084257d1ce92c31fb701928fd9d8a46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_462dde3caa3e624a6fede9b9b1386dcc = $(`<div id="html_462dde3caa3e624a6fede9b9b1386dcc" style="width: 100.0%; height: 100.0%;"><strong>Mansoura University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_f084257d1ce92c31fb701928fd9d8a46.setContent(html_462dde3caa3e624a6fede9b9b1386dcc);
+            
+        
+
+        marker_4e0412d947280d246343152a8cb242fc.bindPopup(popup_f084257d1ce92c31fb701928fd9d8a46)
+        ;
+
+        
+    
+    
+            var marker_c6857e1cccdf29e86e93a1528f248179 = L.marker(
+                [30.0459, 31.2625],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_5b04ba9d66e10bee1f5a8e070490c664 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c6857e1cccdf29e86e93a1528f248179.setIcon(icon_5b04ba9d66e10bee1f5a8e070490c664);
+        
+    
+        var popup_ff1d437be77cfe07e8d249285fc2ce96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dad2ca4ebda5a8fe961a792e8bbce90 = $(`<div id="html_6dad2ca4ebda5a8fe961a792e8bbce90" style="width: 100.0%; height: 100.0%;"><strong>Al-Azhar University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_ff1d437be77cfe07e8d249285fc2ce96.setContent(html_6dad2ca4ebda5a8fe961a792e8bbce90);
+            
+        
+
+        marker_c6857e1cccdf29e86e93a1528f248179.bindPopup(popup_ff1d437be77cfe07e8d249285fc2ce96)
+        ;
+
+        
+    
+    
+            var marker_cf003a993bf449e16084dab54940c717 = L.marker(
+                [27.1801, 31.1837],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_ef1fc23cfb07adc1f370cc24dc04ae6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf003a993bf449e16084dab54940c717.setIcon(icon_ef1fc23cfb07adc1f370cc24dc04ae6a);
+        
+    
+        var popup_4f47f9a8fd9ff639dd9efe3f4abecbbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9fdf0a3f86917d14ee7c81a54d5f924 = $(`<div id="html_e9fdf0a3f86917d14ee7c81a54d5f924" style="width: 100.0%; height: 100.0%;"><strong>Assiut University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_4f47f9a8fd9ff639dd9efe3f4abecbbc.setContent(html_e9fdf0a3f86917d14ee7c81a54d5f924);
+            
+        
+
+        marker_cf003a993bf449e16084dab54940c717.bindPopup(popup_4f47f9a8fd9ff639dd9efe3f4abecbbc)
+        ;
+
+        
+    
+    
+            var marker_8397d6614072cdf525bf289b52bc1bf7 = L.marker(
+                [29.8414, 31.3342],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_d2900614fefaa9da2dcfee59037c73b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8397d6614072cdf525bf289b52bc1bf7.setIcon(icon_d2900614fefaa9da2dcfee59037c73b0);
+        
+    
+        var popup_c2294983921678fffb2f646f2ecb72ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6f1651cdf3c9b441b8632bd02713eb7 = $(`<div id="html_d6f1651cdf3c9b441b8632bd02713eb7" style="width: 100.0%; height: 100.0%;"><strong>Helwan University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_c2294983921678fffb2f646f2ecb72ba.setContent(html_d6f1651cdf3c9b441b8632bd02713eb7);
+            
+        
+
+        marker_8397d6614072cdf525bf289b52bc1bf7.bindPopup(popup_c2294983921678fffb2f646f2ecb72ba)
+        ;
+
+        
+    
+    
+            var marker_90d061665840a484e83bd9804e4f7bf0 = L.marker(
+                [30.5877, 31.502],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_b45dec633a298dc7522fd97baf7ab38f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90d061665840a484e83bd9804e4f7bf0.setIcon(icon_b45dec633a298dc7522fd97baf7ab38f);
+        
+    
+        var popup_61eff1c94b11b8f3af5bb877f7148970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a88bf412aa531b2472dde4d8302da29a = $(`<div id="html_a88bf412aa531b2472dde4d8302da29a" style="width: 100.0%; height: 100.0%;"><strong>Zagazig University</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_61eff1c94b11b8f3af5bb877f7148970.setContent(html_a88bf412aa531b2472dde4d8302da29a);
+            
+        
+
+        marker_90d061665840a484e83bd9804e4f7bf0.bindPopup(popup_61eff1c94b11b8f3af5bb877f7148970)
+        ;
+
+        
+    
+    
+            var marker_97ff259e874a780693189a0587e8817f = L.marker(
+                [30.03, 31.49],
+                {}
+            ).addTo(map_761eaa52465d849b4cb58682607fe146);
+        
+    
+            var icon_9c7a68f898cf31eef19b57c1ff15fc59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97ff259e874a780693189a0587e8817f.setIcon(icon_9c7a68f898cf31eef19b57c1ff15fc59);
+        
+    
+        var popup_3d1cf299d96b4dbc569c9c426faccb4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9595621c71de9d96904cd21fbd1c966a = $(`<div id="html_9595621c71de9d96904cd21fbd1c966a" style="width: 100.0%; height: 100.0%;"><strong>Future University in Egypt</strong><br><img src="https://www.gettyimages.com/photos/university-egypt" width="100"></div>`)[0];
+                popup_3d1cf299d96b4dbc569c9c426faccb4e.setContent(html_9595621c71de9d96904cd21fbd1c966a);
+            
+        
+
+        marker_97ff259e874a780693189a0587e8817f.bindPopup(popup_3d1cf299d96b4dbc569c9c426faccb4e)
+        ;
+
+        
+    
+</script>
+</html>
